@@ -373,11 +373,11 @@ html {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #c8d9e5;
   text-shadow: none; }
 
 ::selection {
-  background: #b3d4fc;
+  background: #c8d9e5;
   text-shadow: none; }
 
 /*
@@ -418,39 +418,46 @@ textarea {
 
 /* 	Links
 	------------------------------------------------------- */
-a, a:visited, a:hover {
-  color: blue; }
+a, a:visited {
+  color: #5185a9;
+  text-decoration: none; }
+a:hover {
+  color: #c8d9e5; }
 
 /* 	Typography
 	------------------------------------------------------- */
+h1, .h1, h2, h3, h4, h5, h6 {
+  font-family: foco, Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
 h1, .h1,
 .h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0.67em 0; }
 
 h2,
 .h2 {
-  font-size: 1.5em;
+  font-size: 2.7em;
   margin: 0.83em 0; }
 
 h3,
 .h3 {
-  font-size: 1.17em;
+  font-size: 2.1em;
   margin: 1em 0; }
 
 h4,
 .h4 {
-  font-size: 1em;
+  font-size: 1.8em;
   margin: 1.33em 0; }
 
 h5,
 .h5 {
-  font-size: 0.83em;
+  font-size: 1.5em;
   margin: 1.67em 0; }
 
 h6,
 .h6 {
-  font-size: 0.67em;
+  font-size: 1.2em;
   margin: 2.33em 0; }
 
 /* 	Lists
@@ -470,10 +477,10 @@ dd {
   top: -999em;
   left: -999em;
   z-index: 1; }
-  @media (min-width: 760px) {
+  @media (min-width: 56em) {
     .breakpoint-context {
       z-index: 2; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 68em) {
     .breakpoint-context {
       z-index: 3; } }
 
@@ -913,7 +920,7 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
   #nav-main.active {
     display: block; }
   #nav-main ul {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #222222;
     list-style: none;
     margin: 0;
     padding: 0; }
@@ -922,16 +929,16 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
       #nav-main ul ul a {
         padding-left: 20px; }
   #nav-main li {
-    border-top: 1px solid #dddddd; }
+    border-top: 1px solid #222222; }
   #nav-main a {
     padding: 10px;
     display: block; }
     #nav-main a:hover {
-      background: #f6f6f6; }
-  @media (min-width: 760px) {
+      background: #5185a9; }
+  @media (min-width: 56em) {
     #nav-main {
-      border-bottom: 1px solid #dddddd;
-      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #222222;
+      border-top: 1px solid #222222;
       display: block;
       float: left;
       padding: 10px 0;
@@ -944,7 +951,7 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
         display: block;
         float: left; }
       #nav-main > ul {
-        border-left: 1px solid #dddddd; }
+        border-left: 1px solid #222222; }
       #nav-main li {
         border-top: none;
         display: block;
@@ -954,11 +961,11 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
           display: block;
           margin: 0; }
         #nav-main li a {
-          border-right: 1px solid #dddddd;
+          border-right: 1px solid #222222;
           line-height: 2em;
           padding: 0 10px; }
         #nav-main li ul {
-          background: #f6f6f6;
+          background: #5185a9;
           display: none;
           float: none;
           padding: .2em 0;
@@ -978,11 +985,17 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
   float: right;
   outline: none; }
   #toggle-menu:hover, #toggle-menu.active {
-    border: 1px solid blue;
-    color: blue; }
-  @media (min-width: 760px) {
+    border: 1px solid #94b5cc;
+    color: #94b5cc; }
+  @media (min-width: 56em) {
     #toggle-menu {
       display: none; } }
+
+footer {
+  background: #661a1a;
+  color: #fff5bf; }
+  footer a {
+    color: #c8d9e5; }
 
 /* 	Content - Posts, Pages, Comments
 	------------------------------------------------------- */
@@ -993,7 +1006,11 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
 /** WP Gallery
  -------------------------------------------------- */
 body {
-  font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif; }
+  font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
+  background: #661a1a; }
+
+.container {
+  background: white; }
 
 /* ==========================================================================
    Print styles.

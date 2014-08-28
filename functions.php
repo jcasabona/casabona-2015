@@ -27,7 +27,7 @@ define('CFCT_DEBUG', false);
 /**
  * Theme version.
  */
-define('CFCT_THEME_VERSION', '1.3.2');
+define('CFCT_THEME_VERSION', '6.0');
 
 /**
  * Theme URL version.
@@ -106,8 +106,8 @@ function cfct_widgets_init() {
 	$sidebar_defaults = array(
 		'before_widget' => '<aside id="%1$s" class="widget clearfix %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>'
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>'
 	);
 	// Copy the following code and replace values to create more widget areas
 	register_sidebar(array_merge($sidebar_defaults, array(

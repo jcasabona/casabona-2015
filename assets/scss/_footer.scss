@@ -1,3 +1,12 @@
 // --------------------------------------------------
 // Global Footer: featured links, site map links, legal
 // --------------------------------------------------
+
+footer{
+	background: $color-primary;
+	color: $color-accent-two;
+
+	& a{
+		color: $color-blue-light;
+		}
+	}

@@ -19,7 +19,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 ?>
 	</div><!-- #main -->
-	<hr>
+	</div>
 	<footer id="footer" class="row site-footer" role="contentinfo">
 		<div class="c1-12">
 <?php

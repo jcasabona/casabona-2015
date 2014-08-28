@@ -38,7 +38,8 @@ $title_description = (is_home() && !empty($blog_desc) ? ' - '.$blog_desc : '');
 </head>
 <body <?php body_class(); ?>>
 <div class="breakpoint-context"></div>
-<div class="container grid">
+<div class="container">
+	<div class="grid">
 	<header id="masthead" class="row site-header clearfix">
 		<div class="c1-12">
 			<button id="toggle-menu"><?php _e('Menu', 'carrington-blueprint'); ?></button>
