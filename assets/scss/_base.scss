@@ -179,3 +179,9 @@ dd {
 		z-index: 3;
 	}
 }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

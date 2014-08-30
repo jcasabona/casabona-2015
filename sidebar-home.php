@@ -15,8 +15,13 @@
 // **********************************************************************
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
-// NOTE: this file is here for compatibility reasons - active templates are in the sidebar/ dir 
-
-cfct_sidebar('home');
+if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 ?>
+<div id="home-aside" class="c9-12">
+	<?php if (!dynamic_sidebar('sidebar-home')) { ?>
+	<aside class="widget">
+		<p>Something will definitely go here.</p>
+	</aside>
+	<?php } ?>
+</div><!--#secondary-->

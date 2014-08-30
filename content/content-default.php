@@ -18,9 +18,9 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 ?>
 <article id="post-<?php the_ID() ?>" <?php post_class('clearfix') ?>>
-	<header class="entry-header">
+	<header class="entry-header group">
+		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><?php the_date('M <\b\r\/> d'); ?></time>
 		<h1 class="entry-title"><a href="<?php the_permalink() ?>"  title="<?php printf( esc_attr__( 'Permalink to %s', 'carrington-blueprint' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title() ?></a></h1>
-		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><?php the_date(); ?></time>
 	</header>
 	<div class="entry-content">
 		<?php

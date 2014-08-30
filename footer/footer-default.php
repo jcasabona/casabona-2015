@@ -18,9 +18,13 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 ?>
+
 	</div><!-- #main -->
-	</div>
-	<footer id="footer" class="row site-footer" role="contentinfo">
+
+</div><!-- .container -->
+
+<footer id="footer" class="row site-footer" role="contentinfo">
+		<div class="grid">
 		<div class="c1-12">
 <?php
 
@@ -35,9 +39,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	}
 ?>
 		</div><!-- .c1-12 -->
+	</div>
 	</footer><!--#footer -->
-
-</div><!-- .container -->
 
 <?php wp_footer() ?>
 

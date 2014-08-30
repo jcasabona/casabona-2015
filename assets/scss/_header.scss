@@ -6,6 +6,11 @@
  -------------------------------------------------- */
 #masthead {
 	margin-bottom: 30px;
+	background: $color-primary;
+
+	& a{
+		color: $white;
+		}
 
 	#site-name {
 	}
@@ -21,7 +26,6 @@
 	}
 
 	ul {
-		border-bottom: 1px solid $nav-border;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -31,17 +35,23 @@
 
 			a {
 			 	padding-left: 20px;
+			 	color: $white;
 			 }
 		}
 	}
 
 	li {
-		border-top: 1px solid $nav-border;
+	
 	}
 
 	a {
 		padding: 10px;
 		display: block;
+		font-weight: bold;
+		letter-spacing: 0.1em;
+	 	font-variant: small-caps;
+	 	font-size: $font-size-base+0.1;
+	 	border-bottom: 1px solid $color-blue; 
 
 		&:hover {
 			background: $nav-hover;
@@ -49,32 +59,27 @@
 	}
 
 	@include breakpoint($medium) {
-		border-bottom: 1px solid $nav-border;
-		border-top: 1px solid $nav-border;
 		display: block;
-		float: left;
 		padding: 10px 0;
 		width: 100%;
 
 		a {
-			display: block;
-			float: left;
+			display: inline-block;
+			border: 0;
 		}
 
 		ul {
 			border-bottom: none;
-			display: block;
-			float: left;
+			display: inline-block;
 		}
 
 		& > ul {
-			border-left: 1px solid $nav-border;
+			
 		}
 
 		li {
 			border-top: none;
-			display: block;
-			float: left;
+			display: inline-block;
 			position: relative;
 
 			&:hover {
@@ -85,7 +90,6 @@
 			}
 
 			a {
-				border-right: 1px solid $nav-border;
 				line-height: 2em;
 				padding: 0 10px;
 			}
@@ -113,15 +117,14 @@
 }
 
 #toggle-menu {
-	background: transparent;
-	border: 1px solid $gray;
+	background: $color-accent-two;
+	border: 0;
 	box-shadow: none;
 	float: right;
 	outline: none;
 
 	&:hover,
 	&.active {
-		border: 1px solid $color-blue;
 		color: $color-blue;
 	}
 

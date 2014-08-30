@@ -484,6 +484,11 @@ dd {
     .breakpoint-context {
       z-index: 3; } }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /*	CSSGrid
  * 	https://github.com/crowdfavorite/css-grid
  * 	Version: 2.0.2
@@ -911,7 +916,10 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
 /** Masthead
  -------------------------------------------------- */
 #masthead {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background: #661a1a; }
+  #masthead a {
+    color: white; }
 
 /* 	Main Navigation
 	------------------------------------------------------- */
@@ -920,48 +928,43 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
   #nav-main.active {
     display: block; }
   #nav-main ul {
-    border-bottom: 1px solid #222222;
     list-style: none;
     margin: 0;
     padding: 0; }
     #nav-main ul ul {
       border-bottom: none; }
       #nav-main ul ul a {
-        padding-left: 20px; }
-  #nav-main li {
-    border-top: 1px solid #222222; }
+        padding-left: 20px;
+        color: white; }
   #nav-main a {
     padding: 10px;
-    display: block; }
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    font-size: 1.35em;
+    border-bottom: 1px solid #94b5cc; }
     #nav-main a:hover {
       background: #5185a9; }
   @media (min-width: 56em) {
     #nav-main {
-      border-bottom: 1px solid #222222;
-      border-top: 1px solid #222222;
       display: block;
-      float: left;
       padding: 10px 0;
       width: 100%; }
       #nav-main a {
-        display: block;
-        float: left; }
+        display: inline-block;
+        border: 0; }
       #nav-main ul {
         border-bottom: none;
-        display: block;
-        float: left; }
-      #nav-main > ul {
-        border-left: 1px solid #222222; }
+        display: inline-block; }
       #nav-main li {
         border-top: none;
-        display: block;
-        float: left;
+        display: inline-block;
         position: relative; }
         #nav-main li:hover > ul {
           display: block;
           margin: 0; }
         #nav-main li a {
-          border-right: 1px solid #222222;
           line-height: 2em;
           padding: 0 10px; }
         #nav-main li ul {
@@ -979,13 +982,12 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
               float: none; } }
 
 #toggle-menu {
-  background: transparent;
-  border: 1px solid #999999;
+  background: #fff5bf;
+  border: 0;
   box-shadow: none;
   float: right;
   outline: none; }
   #toggle-menu:hover, #toggle-menu.active {
-    border: 1px solid #94b5cc;
     color: #94b5cc; }
   @media (min-width: 56em) {
     #toggle-menu {
@@ -1001,6 +1003,18 @@ footer {
 	------------------------------------------------------- */
 /** Posts Default
  -------------------------------------------------- */
+.entry-date {
+  background: #0db282;
+  color: white;
+  font-weight: bold;
+  font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
+  padding: 0.5em;
+  font-size: 1.25em;
+  max-width: 50px;
+  text-align: center;
+  float: left;
+  margin: -0.65em 0.5em 0 0; }
+
 /** Attachment Page
  -------------------------------------------------- */
 /** WP Gallery

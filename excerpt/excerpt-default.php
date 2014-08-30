@@ -21,8 +21,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <article id="post-<?php the_ID() ?>" <?php post_class('excerpt clearfix') ?>>
 	<header class="entry-header">
+		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><?php the_date('M <\b\r\/> d'); ?></time>
 		<h2 class="entry-title"><a href="<?php the_permalink() ?>"  title="<?php printf( esc_attr__( 'Permalink to %s', 'carrington-blueprint' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title() ?></a></h2>
-		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time>
 	</header>
 	<div class="entry-content">
 		<?php

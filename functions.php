@@ -112,7 +112,12 @@ function cfct_widgets_init() {
 	// Copy the following code and replace values to create more widget areas
 	register_sidebar(array_merge($sidebar_defaults, array(
 		'id' => 'sidebar-default',
-		'name' => __('Default Sidebar', 'carrington-blueprint'),
+		'name' => __('Default Sidebar', 'carrington-blueprint')
+	)));
+
+	register_sidebar(array_merge($sidebar_defaults, array(
+		'id' => 'sidebar-home',
+		'name' => __('Home Sidebar', 'carrington-blueprint')
 	)));
 }
 add_action( 'widgets_init', 'cfct_widgets_init' );
