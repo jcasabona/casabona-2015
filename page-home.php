@@ -11,7 +11,7 @@ get_header();
 
 ?>
 
-<div id="primary" class="c2-8">
+<div id="primary" class="c1-7">
 	<?php
 	// For the loop used, look in /loops
 	cfct_loop();
