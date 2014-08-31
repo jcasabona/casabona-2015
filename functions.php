@@ -143,3 +143,5 @@ function cfct_load_assets() {
 	wp_enqueue_script('typekit', 'http://use.typekit.net/bev5ovw.js', array(), CFCT_URL_VERSION);
 }
 add_action('wp_enqueue_scripts', 'cfct_load_assets');
+
+require_once('functions/custom.php');

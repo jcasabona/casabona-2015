@@ -373,11 +373,11 @@ html {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #c8d9e5;
+  background: #a32a2a;
   text-shadow: none; }
 
 ::selection {
-  background: #c8d9e5;
+  background: #a32a2a;
   text-shadow: none; }
 
 /*
@@ -419,16 +419,17 @@ textarea {
 /* 	Links
 	------------------------------------------------------- */
 a, a:visited {
-  color: #5185a9;
+  color: #150505;
   text-decoration: none; }
 a:hover {
-  color: #c8d9e5; }
+  color: #a32a2a; }
 
 /* 	Typography
 	------------------------------------------------------- */
 h1, .h1, h2, h3, h4, h5, h6 {
   font-family: foco, Helvetica, Arial, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.25em; }
 
 h1, .h1,
 .h1 {
@@ -917,7 +918,8 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
  -------------------------------------------------- */
 #masthead {
   margin-bottom: 30px;
-  background: #661a1a; }
+  background: #94b5cc;
+  border-top: 8px solid #406a87; }
   #masthead a {
     color: white; }
 
@@ -943,9 +945,9 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
     letter-spacing: 0.1em;
     font-variant: small-caps;
     font-size: 1.35em;
-    border-bottom: 1px solid #94b5cc; }
+    border-bottom: 1px solid #661a1a; }
     #nav-main a:hover {
-      background: #5185a9; }
+      background: #150505; }
   @media (min-width: 56em) {
     #nav-main {
       display: block;
@@ -968,7 +970,7 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
           line-height: 2em;
           padding: 0 10px; }
         #nav-main li ul {
-          background: #5185a9;
+          background: #150505;
           display: none;
           float: none;
           padding: .2em 0;
@@ -988,23 +990,23 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
   float: right;
   outline: none; }
   #toggle-menu:hover, #toggle-menu.active {
-    color: #94b5cc; }
+    color: #661a1a; }
   @media (min-width: 56em) {
     #toggle-menu {
       display: none; } }
 
 footer {
-  background: #661a1a;
+  background: #94b5cc;
   color: #fff5bf; }
   footer a {
-    color: #c8d9e5; }
+    color: #a32a2a; }
 
 /* 	Content - Posts, Pages, Comments
 	------------------------------------------------------- */
 /** Posts Default
  -------------------------------------------------- */
 .entry-date {
-  background: #0db282;
+  background: #406a87;
   color: white;
   font-weight: bold;
   font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
@@ -1021,7 +1023,7 @@ footer {
  -------------------------------------------------- */
 body {
   font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
-  background: #661a1a; }
+  background: #94b5cc; }
 
 .container {
   background: white; }

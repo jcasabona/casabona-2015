@@ -11,17 +11,18 @@
 // **********************************************************************
 // This program is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // **********************************************************************
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
+print "<h3>HELLOO</h3>";
+$posts= get_posts();
+if ($posts->have_posts()) {
+	while ($posts->have_posts()) {
+		$posts->the_post();
+		cfct_excerpt();
+	}
+}
 
 ?>
-<div id="home-aside" class="c9-12">
-	<?php if (!dynamic_sidebar('sidebar-home')) { ?>
-	<aside class="widget">
-		<p>Something will definitely go here.</p>
-	</aside>
-	<?php } ?>
-</div><!--#secondary-->

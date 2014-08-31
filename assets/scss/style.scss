@@ -12,12 +12,12 @@ $black: #000;
 $gray: #999;
 $gray-light: #ededed;
 $gray-dark: #222;
-$color-blue: #94B5CC;
+$color-blue: #661A1A;
 $color-blue-light: lighten($color-blue, 15%);
 $nav-hover: darken($color-blue, 20%);
 $nav-border: $gray-dark;
-$color-primary: #661A1A;
-$color-accent: #0DB282;
+$color-primary: #94B5CC;
+$color-accent: darken($color-primary, 30%);
 $color-accent-two: #FFF5BF;
 
 // Typography

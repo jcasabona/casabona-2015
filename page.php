@@ -23,8 +23,7 @@ get_header();
 <div id="primary" class="c1-8">
 	<?php
 	// For the loop used, look in /loops
-	cfct_loop();
-	comments_template();
+	cfct_loop();	
 	?>
 </div><!-- #primary -->
 
