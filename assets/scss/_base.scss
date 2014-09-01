@@ -74,6 +74,8 @@ img,
 svg,
 video {
 	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
 }
 
 /*
@@ -114,7 +116,17 @@ a {
 h1,h2,h3,h4,h5,h6{
 	font-family: $font-sans;
 	font-weight: bold;
-	line-height: $font-size-base;
+	line-height: normal;
+	color: $color-blue;
+
+	& a, & a:visited{
+		color: $color-blue;
+
+		&:hover{ 
+			color: $color-blue-light;
+			}
+		}
+
 	}
 
 h1, 
@@ -164,6 +176,14 @@ dl {
 dd {
 	margin: 0 0 0 40px;
 }
+
+
+/* Text */
+p, dd, li{
+	font-size: $font-size-base;
+	line-height: $font-size-base+0.15;
+	}
+
 
 /* 	Breakpoint indicator
 	------------------------------------------------------- */

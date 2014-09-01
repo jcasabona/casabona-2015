@@ -18,7 +18,7 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 ?>
-<div id="home-aside" class="c8-12">
+<div id="home-aside" class="offset1 c9-12">
 	<?php if (!dynamic_sidebar('sidebar-home')) { ?>
 	<aside class="widget">
 		<p>Something will definitely go here.</p>

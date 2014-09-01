@@ -16,12 +16,12 @@
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
-print "<h3>HELLOO</h3>";
-$posts= get_posts();
+
+$posts= new WP_Query('posts_per_page=10');
 if ($posts->have_posts()) {
 	while ($posts->have_posts()) {
 		$posts->the_post();
-		cfct_excerpt();
+		cfct_content();
 	}
 }
 
