@@ -362,8 +362,8 @@ th {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../scss/font-awesome/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../scss/font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../scss/font-awesome/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../scss/font-awesome/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../scss/font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -2094,7 +2094,7 @@ a:hover {
 h1, .h1, h2, h3, h4, h5, h6 {
   font-family: foco, Helvetica, Arial, sans-serif;
   font-weight: bold;
-  line-height: normal;
+  line-height: 1em;
   color: #661a1a; }
   h1 a, .h1 a, h1 a:visited, .h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
     color: #661a1a; }
@@ -2104,7 +2104,7 @@ h1, .h1, h2, h3, h4, h5, h6 {
 h1, .h1,
 .h1 {
   font-size: 3em;
-  margin: 0.67em 0; }
+  margin: 0 0 0.25em; }
 
 h2,
 .h2 {
@@ -2683,9 +2683,20 @@ footer {
 .entry-date {
   color: #406a87;
   font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
-  padding: 0.5em;
   font-size: 1.25em;
-  margin: 0 0.5em 0 0; }
+  float: right;
+  margin-left: 1.5em; }
+
+.entry-meta {
+  font-size: 0.8em;
+  background: #ededed;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  padding: 0.25em;
+  margin-bottom: 2em; }
+  .entry-meta p {
+    padding: 0;
+    margin: 0; }
 
 /** Attachment Page
  -------------------------------------------------- */

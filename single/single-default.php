@@ -21,7 +21,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 get_header();
 ?>
 
-<div id="primary" class="c1-8">
+<div id="primary" class="offset1 c1-9">
 <?php
 // For the loop used, look in /loops
 cfct_loop();
@@ -34,8 +34,6 @@ comments_template();
 </div> <!-- #content -->
 <?php 
 
-// Calls sidebar.php
-get_sidebar();
 
 // Calls footer.php
 get_footer();

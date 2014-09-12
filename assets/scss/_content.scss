@@ -11,15 +11,25 @@
 .entry-date {
 	color: $color-accent;
 	font-family: $font-serif;
-	padding: 0.5em;
 	font-size: $font-size-base;
-	margin: 0 0.5em 0 0;
+	float: right;
+	margin-left: $padding*3;
 }
 .entry-content {
 }
 .entry-excerpt {
 }
 .entry-meta {
+	font-size: $font-size-base - 0.45;
+	background: $gray-light;
+	border-top: 1px solid $gray-dark;
+	border-bottom: 1px solid $gray-dark;
+	padding: $padding/2;
+	margin-bottom: $padding*4;
+	& p{
+		padding: 0;
+		margin: 0;
+		}
 }
 
 /** Attachment Page
