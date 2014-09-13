@@ -23,7 +23,12 @@ get_header();
 	<h1><?php _e('<i>Error 404:</i> Page Not Found', 'carrington-blueprint'); ?></h1>
 	<?php
 	_e('<h2>Sorry, we couldn&rsquo;t find the page you&rsquo;re looking for.</h2> <p>We may have moved the page or perhaps you followed an outdated link.<br/> You could try a search, or visit the home page.</p>', 'carrington-blueprint').'</p>'; 
+	
 	cfct_form('search');
-	?>
+?>
+	<h3><?php _e('Searching by Tag could also help...', 'carrington-blueprint'); ?></h3>
+	
+	<?php mf_tag_cloud(); ?>
+	
 </div><!-- #content -->
 <?php get_footer(); ?>

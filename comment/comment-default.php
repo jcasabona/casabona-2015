@@ -32,21 +32,14 @@ if ($comment->comment_approved == '0') {
 }
 ?>
 <div id="comment-<?php comment_ID(); ?>" <?php comment_class('reply clearfix'); ?>>
-	<div class="reply-header vcard">
-		<?php echo get_avatar($comment, 34); ?>
-		<b class="reply-title fn"><?php comment_author_link(); ?></b>
+	<div class="reply-header vcard c1-2">
+			<?php echo get_avatar($comment, 40); ?><br/>
+			<?php comment_author_link(); ?> said:		
 	</div>
-	<div class="reply-content">
+
+	<div class="reply-content c3-7">
 		<?php comment_text(); ?>
-	</div>
-	<div class="reply-footer">
-		<?php
-		printf(__('On %s at %s', 'carrington-blueprint'), get_comment_date(), get_comment_time());
-		if (get_option('thread_comments')) {
-			echo ' &middot; ';
-			comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'])), $comment, $post);
-		}
-		edit_comment_link(__('Edit', 'carrington-blueprint'), ' &middot; ', '');
-		?>
+
+		<small><?php printf(__('On %s at %s', 'carrington-blueprint'), get_comment_date(), get_comment_time()); ?></small>
 	</div>
 </div><!-- .reply -->

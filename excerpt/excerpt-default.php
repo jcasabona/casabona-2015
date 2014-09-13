@@ -19,23 +19,24 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 ?>
 
-<article id="post-<?php the_ID() ?>" <?php post_class('excerpt clearfix') ?>>
-	<header class="entry-header">
-		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><?php the_date('M <\b\r\/> d'); ?></time>
-		<h2 class="entry-title"><a href="<?php the_permalink() ?>"  title="<?php printf( esc_attr__( 'Permalink to %s', 'carrington-blueprint' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title() ?></a></h2>
+<article id="post-<?php the_ID() ?>" <?php post_class('clearfix') ?>>
+	<header class="entry-header group">
+		<time class="entry-date" datetime="<?php the_time('c'); ?>" pubdate><i class="fa fa-calendar"></i> <?php the_date('M d, Y'); ?></time>
+		<h1 class="entry-title"><a href="<?php the_permalink() ?>"  title="<?php printf( esc_attr__( 'Permalink to %s', 'carrington-blueprint' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title() ?></a></h1>
+		<?php if(has_post_thumbnail()) : ?>
+			<div class="featured-image">
+			<?php the_post_thumbnail('full'); ?>
+			</div>
+		<?php endif; ?>
 	</header>
 	<div class="entry-content">
-		<?php
-			the_excerpt();
-		?>
+		<?php the_excerpt(); ?>
 	</div>
 	<div class="entry-footer entry-meta">
 		<?php
-			printf(__('<p><strong>Categories</strong> %s</p>', 'carrington-blueprint'), get_the_category_list(', '));
-			the_tags(__('<p><strong>Tags</strong> ', 'carrington-blueprint'), ', ', '</p>');
+			printf(__('<p><strong>Categories:</strong> %s</p>', 'carrington-blueprint'), get_the_category_list(', '));
+			the_tags(__('<p><strong>Tags:</strong> ', 'carrington-blueprint'), ', ', '</p>');
 		?>
-		<p><?php edit_post_link(); ?></p>
 	</div>
 </article><!-- .post -->
-
 

@@ -3,7 +3,27 @@
 // --------------------------------------------------
 
 .widget {
+	margin: 0 0 $padding*2 0;
+	border-bottom: 1px solid $color-accent;
 }
+
 .widget-title {
-	
+	margin: 0 0 $padding*2 0;
+	padding: 0;
+}
+
+.widget_cse_next_event{
+	background: $color-accent;
+	font-size: 0.95em;
+	color: $white;
+	padding: $padding*4;
+	font-family: $font-sans;
+
+	& .widget-title{
+		color: lighten($color-accent, 50%);
+	}
+
+	& a, & a:visited{
+		color: $color-accent-two;
+	}
 }

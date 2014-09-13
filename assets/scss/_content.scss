@@ -32,6 +32,63 @@
 		}
 }
 
+.archive-title{
+	margin-bottom: $padding*3;
+}
+
+/** Comments
+ -------------------------------------------------- */
+h2#comments{
+	font-size: $font-size-base+0.25em;
+	background: $color-blue;
+	color: $white;
+	padding: $padding/2;
+}
+
+ol.reply-list{
+	font-size: 0.95em;
+	font-family: $font-sans;
+	margin-left: $padding/2;
+	padding-left: 0;
+
+	& li{
+		padding: 0;
+		margin: $padding 0;
+		list-style-type: none;
+
+
+		& p{
+			font-size: 0.95em;
+			padding: 0;
+			margin: 0;
+		}
+	}	
+}
+
+.reply{
+	border-bottom: 1px solid $color-blue-light;
+}
+
+.form-allowed-tags{
+	font-size: 0.9em;
+	padding: $padding;
+	background: $color-accent-two;
+	border: 1px solid $gray-dark;
+	font-family: $font-sans;
+	max-width: 80%;
+}
+
+.comment-form label{
+	display: block;
+}
+
+.comment-form input, .comment-form textarea{
+	padding: 3px;
+	margin: $padding;
+	font-size: $font-size-base;
+	max-width: 80%;
+}
+
 /** Attachment Page
  -------------------------------------------------- */
 .attachment-header {

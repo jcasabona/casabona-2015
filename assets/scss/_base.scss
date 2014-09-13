@@ -101,7 +101,7 @@ textarea {
 a {
 	&,
 	&:visited{
-		color: darken($color-blue, 20%);
+		color: lighten($color-blue, 10%);
 		text-decoration: none;
 	}
 
@@ -131,37 +131,37 @@ h1,h2,h3,h4,h5,h6{
 
 h1, 
 .h1 {
-	font-size: 3em;
+	font-size: 2.6em;
 	margin: 0 0 0.25em;
 }
 
 h2,
 .h2 {
-	font-size: 2.7em;
+	font-size: 2.4em;
 	margin: 0.83em 0;
 }
 
 h3,
 .h3 {
-	font-size: 2.1em;
+	font-size: 2.2em;
 	margin: 1em 0;
 }
 
 h4,
 .h4 {
-	font-size: 1.8em;
+	font-size: 2em;
 	margin: 1.33em 0;
 }
 
 h5,
 .h5 {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	margin: 1.67em 0;
 }
 
 h6,
 .h6 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin: 2.33em 0;
 }
 
@@ -177,8 +177,31 @@ dd {
 	margin: 0 0 0 40px;
 }
 
+dl.cse-events{
+	margin: 0;
+
+	& dt{
+		margin: $padding 0;
+		font-weight: bold;
+		font-size: $font-size-base;
+	}
+
+	& dd{
+		margin: $padding 0;
+	}
+}
+
 
 /* Text */
+
+blockquote{
+	font-size: $font-size-base*1.5;
+	margin: $padding*3;
+	padding-left: $padding;
+	border-left: 4px solid $color-accent;
+}
+
+
 p, dd, li{
 	font-size: $font-size-base;
 	line-height: $font-size-base+0.15;

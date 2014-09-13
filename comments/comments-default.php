@@ -21,7 +21,7 @@ global $post, $wp_query, $comments, $comment;
 
 if (have_comments() || comments_open()) {
 	if (have_comments()) {
-		echo '<h2 id="comments" class="section-title">',comments_number(__('No Responses Yet', 'carrington-blueprint'), __('One Response', 'carrington-blueprint'), __('% Responses', 'carrington-blueprint')),'</h2>';
+		echo '<h2 id="comments" class="section-title">',comments_number(__('No Responses Yet', 'carrington-blueprint'), __('1 Response', 'carrington-blueprint'), __('% Responses', 'carrington-blueprint')),'</h2>';
 	}
 	if (!post_password_required()) {
 		echo '<ol class="reply-list">', wp_list_comments(array('callback'=> 'cfct_threaded_comment')), '</ol>';

@@ -6,3 +6,45 @@ body{
 .container{
 	background: $white;
 	}
+
+ul.wp-tag-cloud{
+	margin: 0;
+	padding: 0.3em;
+
+	& li{
+		list-style-type: none;
+		
+		& a{
+			display: block;
+			padding: 0.4em;
+			margin: 0.3em 0;
+			position: absolute;
+		}	
+	}
+
+}
+
+progress, progress[role] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none;
+		background: #FFFFFF;
+		background-size: auto;
+		width: 100%;
+		height: 4em;
+	}
+
+	/* Progress bar background */
+	progress::-webkit-progress-bar {
+		background: #FFFFFF;
+	}
+
+	/* Progress bar value */
+	progress::-moz-progress-bar {
+		background: #00FFFF;
+	}
+	
+	progress::-webkit-progress-value {
+			background: #00FFFF;
+		}

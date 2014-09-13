@@ -2084,7 +2084,7 @@ textarea {
 /* 	Links
 	------------------------------------------------------- */
 a, a:visited {
-  color: #150505;
+  color: #8f2424;
   text-decoration: none; }
 a:hover {
   color: #a32a2a; }
@@ -2103,32 +2103,32 @@ h1, .h1, h2, h3, h4, h5, h6 {
 
 h1, .h1,
 .h1 {
-  font-size: 3em;
+  font-size: 2.6em;
   margin: 0 0 0.25em; }
 
 h2,
 .h2 {
-  font-size: 2.7em;
+  font-size: 2.4em;
   margin: 0.83em 0; }
 
 h3,
 .h3 {
-  font-size: 2.1em;
+  font-size: 2.2em;
   margin: 1em 0; }
 
 h4,
 .h4 {
-  font-size: 1.8em;
+  font-size: 2em;
   margin: 1.33em 0; }
 
 h5,
 .h5 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 1.67em 0; }
 
 h6,
 .h6 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 2.33em 0; }
 
 /* 	Lists
@@ -2141,7 +2141,22 @@ dl {
 dd {
   margin: 0 0 0 40px; }
 
+dl.cse-events {
+  margin: 0; }
+  dl.cse-events dt {
+    margin: 0.5em 0;
+    font-weight: bold;
+    font-size: 1.25em; }
+  dl.cse-events dd {
+    margin: 0.5em 0; }
+
 /* Text */
+blockquote {
+  font-size: 1.875em;
+  margin: 1.5em;
+  padding-left: 0.5em;
+  border-left: 4px solid #406a87; }
+
 p, dd, li {
   font-size: 1.25em;
   line-height: 1.4em; }
@@ -2597,6 +2612,9 @@ http://nicolasgallagher.com/micro-offsetfix-hack/ */
   border-top: 8px solid #406a87; }
   #masthead a {
     color: white; }
+  #masthead #site-name {
+    font-size: 3em;
+    padding-top: 0.5em; }
 
 /* 	Main Navigation
 	------------------------------------------------------- */
@@ -2698,16 +2716,112 @@ footer {
     padding: 0;
     margin: 0; }
 
+.archive-title {
+  margin-bottom: 1.5em; }
+
+/** Comments
+ -------------------------------------------------- */
+h2#comments {
+  font-size: 1.5em;
+  background: #661a1a;
+  color: white;
+  padding: 0.25em; }
+
+ol.reply-list {
+  font-size: 0.95em;
+  font-family: foco, Helvetica, Arial, sans-serif;
+  margin-left: 0.25em;
+  padding-left: 0; }
+  ol.reply-list li {
+    padding: 0;
+    margin: 0.5em 0;
+    list-style-type: none; }
+    ol.reply-list li p {
+      font-size: 0.95em;
+      padding: 0;
+      margin: 0; }
+
+.reply {
+  border-bottom: 1px solid #a32a2a; }
+
+.form-allowed-tags {
+  font-size: 0.9em;
+  padding: 0.5em;
+  background: #fff5bf;
+  border: 1px solid #222222;
+  font-family: foco, Helvetica, Arial, sans-serif;
+  max-width: 80%; }
+
+.comment-form label {
+  display: block; }
+
+.comment-form input, .comment-form textarea {
+  padding: 3px;
+  margin: 0.5em;
+  font-size: 1.25em;
+  max-width: 80%; }
+
 /** Attachment Page
  -------------------------------------------------- */
 /** WP Gallery
  -------------------------------------------------- */
+.widget {
+  margin: 0 0 1em 0;
+  border-bottom: 1px solid #406a87; }
+
+.widget-title {
+  margin: 0 0 1em 0;
+  padding: 0; }
+
+.widget_cse_next_event {
+  background: #406a87;
+  font-size: 0.95em;
+  color: white;
+  padding: 2em;
+  font-family: foco, Helvetica, Arial, sans-serif; }
+  .widget_cse_next_event .widget-title {
+    color: #d9e5ed; }
+  .widget_cse_next_event a, .widget_cse_next_event a:visited {
+    color: #fff5bf; }
+
 body {
   font-family: clavo, Helvetica, Georgia, "Times New Roman", Times, serif;
   background: #94b5cc; }
 
 .container {
   background: white; }
+
+ul.wp-tag-cloud {
+  margin: 0;
+  padding: 0.3em; }
+  ul.wp-tag-cloud li {
+    list-style-type: none; }
+    ul.wp-tag-cloud li a {
+      display: block;
+      padding: 0.4em;
+      margin: 0.3em 0;
+      position: absolute; }
+
+progress, progress[role] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: #FFFFFF;
+  background-size: auto;
+  width: 100%;
+  height: 4em; }
+
+/* Progress bar background */
+progress::-webkit-progress-bar {
+  background: #FFFFFF; }
+
+/* Progress bar value */
+progress::-moz-progress-bar {
+  background: #00FFFF; }
+
+progress::-webkit-progress-value {
+  background: #00FFFF; }
 
 /* ==========================================================================
    Print styles.
