@@ -31,6 +31,5 @@ else {
 
 ?>
 <form role="search" class="searchform" method="get" action="<?php echo home_url('/'); ?>" onsubmit="<?php echo $onsubmit; ?>">
-	<input type="text" id="<?php echo $id; ?>" class="s" name="s" value="<?php esc_attr_e($s); ?>" placeholder="Search" />
-	<input type="submit" class="searchsubmit button" value="<?php _e('Search', 'carrington-blueprint'); ?>" />
+	<input type="text" id="<?php echo $id; ?>" class="s" name="s" value="<?php esc_attr_e($s); ?>" placeholder="Search + Enter" />
 </form>

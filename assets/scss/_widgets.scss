@@ -4,12 +4,48 @@
 
 .widget {
 	margin: 0 0 $padding*2 0;
-	border-bottom: 1px solid $color-accent;
+
+	& select{
+	  font-size: 1.6em;
+	  background: #FFFFFF;
+	  border: 1px solid #999999;
+	  color: #666666;
+	  max-width: 97%;
+	  margin: 0 auto;
+	  }
 }
 
 .widget-title {
 	margin: 0 0 $padding*2 0;
-	padding: 0;
+	font-size: $font-size-base+0.15;
+	background: $color-primary;
+	color: $white;
+	padding: $padding/2;
+	font-weight: normal;
+}
+
+.widget_search{
+	border: 0;
+}
+
+.widget form{
+	margin: $padding 0;
+	
+	& input{
+	  padding: $padding;
+	  max-width: 96%;
+	  font-size: $font-size-base+0.2;
+	  border: 0;
+	  border-bottom: 2px solid $gray;
+	  -webkit-box-shadow: none;
+	  box-shadow: 0;
+	  color: $color-accent;
+	  outline: none;
+	  font-family: $font-sans;
+	  &:focus{
+	    border-bottom-color: $color-accent;
+	  }
+	}
 }
 
 .widget_cse_next_event{
@@ -21,6 +57,9 @@
 
 	& .widget-title{
 		color: lighten($color-accent, 50%);
+		background: none;
+		font-size: 2em;
+		margin-left: 0;
 	}
 
 	& a, & a:visited{

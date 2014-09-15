@@ -34,7 +34,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 	if (cfct_get_option('cfct_credit') == 'yes') {
 ?>
-		<p id="developer-link"><?php printf(__('Crafted by <a href="http://crowdfavorite.com" title="Custom WordPress development, design and consulting services." rel="developer designer">%s</a>', 'carrington-blueprint'), 'Crowd Favorite'); ?></p>
+		<p id="developer-link"><?php printf(__('Powered By: WordPress. Hosted by: <a href="http://www.shareasale.com/r.cfm?b=394686&u=929869&m=41388&urllink=&afftrack=">WP Engine</a>. Based on Carrington Blueprint by <a href="http://crowdfavorite.com" title="Custom WordPress development, design and consulting services." rel="developer designer">%s</a>', 'carrington-blueprint'), 'Crowd Favorite'); ?></p>
 <?php
 	}
 ?>

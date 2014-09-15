@@ -1,0 +1,1 @@
+<?php cfct_form('search'); ?>
